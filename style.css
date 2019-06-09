@@ -1,0 +1,137 @@
+/*
+Theme Name: PR Hacker Theme
+Author: Brandon Zeek
+Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    color: #33254A;
+}
+
+.nav-link:hover {
+    color: #F34033;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.mr-10 {
+    margin-right: 10%;
+}
+
+.ml-10 {
+    left: 10%;
+}
+
+.orange-text {
+    color: #F33F33;
+}
+
+.dark-blue {
+    color: #202B40;
+}
+
+.orange-bg {
+    background: #F34033;
+}
+
+.up-next {
+    color: #0AC6E9;
+}
+
+.card-img-overlay {
+    padding: 0;
+}
+
+.date-headings h2, h4 {
+    margin-bottom: 0;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.quiz-headings {
+    font-size: 27px;
+    font-weight: 500;
+    color: #33244A;
+    text-decoration: none;
+}
+
+.sm-heading {
+    font-size: 18px;
+    font-weight: 500;
+    color: #202B40;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.gray-text {
+    color: #A5A5A5;
+}
+
+.day-month {
+    font-weight: 600;
+}
+
+.day {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ham-heading {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.home-heading {
+    font-size: 25px;
+    color: #33244A;
+}
+
+.quiz-container {
+    margin-top: 150px;
+    padding-bottom: 200px;
+}
+
+.slick-prev,
+.slick-next {
+    float: right;
+}
+
+.slick-prev {
+    transform: translate(60%, 730%);
+}
+
+.slick-next {
+    transform: translate(60%, -1010%);
+}
+
+.list-inline-item:hover {
+    color: #F34033;
+}
+
+@media screen and (min-width: 992px) {
+    .women-day {
+        position: absolute;
+        bottom: 40px;
+        left: 790px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    button#responsive-menu-button {
+        width: 35px !important;
+        height: 30px !important;
+        position: fixed;
+        top: 15px;
+        right: 5%;
+        background: #18324F !important;
+    }
+}
