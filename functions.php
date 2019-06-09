@@ -29,6 +29,9 @@ function enqueue__theme_scripts() {
     // Bootstrap
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ) );
 
+	// jQuery UI
+    wp_enqueue_script( 'jquery-ui',  get_template_directory_uri() . '/js/jquery.ui.min.js' );
+
     // Slick Slider
     wp_enqueue_script( 'slick-js',  get_template_directory_uri() . '/js/slick.min.js' );
 

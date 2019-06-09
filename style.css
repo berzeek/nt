@@ -94,26 +94,36 @@ Version: 1.0
     color: #33244A;
 }
 
-.quiz-container {
-    margin-top: 150px;
-    padding-bottom: 200px;
-}
-
-.slick-prev,
-.slick-next {
-    float: right;
-}
-
-.slick-prev {
-    transform: translate(60%, 730%);
-}
-
-.slick-next {
-    transform: translate(60%, -1010%);
-}
-
 .list-inline-item:hover {
     color: #F34033;
+}
+
+.spinner {
+    animation: spin-animation 1s 1s;
+    display: inline-block;
+}
+
+.infinite-spinner {
+    animation: inf-spin-animation 2s infinite;
+    display: inline-block;
+}
+
+@keyframes spin-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes inf-spin-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -122,6 +132,27 @@ Version: 1.0
         bottom: 40px;
         left: 790px;
         z-index: 1;
+    }
+
+    .quiz-container {
+        margin-top: 150px;
+        padding-bottom: 200px;
+    }
+
+    .slick-prev-lg {
+        /*transform: translate(60%, 730%);*/
+        float: right;
+        position: absolute;
+        right: -85px;
+        top: 205px;
+    }
+
+    .slick-next-lg {
+        /*transform: translate(60%, -1010%);*/
+        float: right;
+        position: absolute;
+        right: -85px;
+        top: 270px;
     }
 }
 
@@ -133,5 +164,49 @@ Version: 1.0
         top: 15px;
         right: 5%;
         background: #18324F !important;
+    }
+
+    .quiz-headings {
+        font-size: 20px;
+    }
+
+    .ham-heading {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 27px;
+    }
+
+    .day-month {
+        font-size: 17px;
+    }
+
+    .day {
+        font-size: 16px;
+    }
+
+    .slick-prev {
+        display: inline;
+        position: absolute;
+        z-index: 2;
+        right: 155px;
+        top: 340px;
+        background: #fff;
+    }
+
+    .slick-next {
+        position: absolute !important;;
+        left: 304px !important;;
+        z-index: 2 !important;;
+        bottom: 1px !important;;
+        background: #fff !important;;
+    }
+
+    #menu-main-menu {
+        font-size: 14px;
+    }
+
+    .home-heading {
+        font-size: 15px;
+        line-height: 30px;
     }
 }

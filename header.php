@@ -18,8 +18,8 @@
     <?php wp_head(); ?>
 </head>
 <body class="container-fluid">
-<nav class="navbar navbar-expand-md bg-dark pb-4 pt-4 pl-0 pr-0 font-weight-bold text-uppercase bg-white">
-    <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-md bg-dark pb-m-4 pt-m-4 pl-m-0 pr-m-0 font-weight-bold text-uppercase bg-white">
+    <a class="navbar-brand img-fluid" id="logo" href="#">
 		<?php
 		$custom_logo_id = get_theme_mod( 'custom_logo' );
 		$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
@@ -42,6 +42,12 @@
 		'walker'          => new bs4navwalker()
 	]);
 	?>
-    <img src="<?php echo get_template_directory_uri();?>/img/user.png" class="pl-4">
-    <img src="<?php echo get_template_directory_uri();?>/img/search.png" class="pl-4 pr-4">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <img class="d-block" id="user-icon" src="<?php echo get_template_directory_uri();?>/img/user.png">
+        </div>
+        <div class="col-md-6 pl-2">
+            <img class="d-none d-lg-block" id="search-toggle" src="<?php echo get_template_directory_uri();?>/img/search.png" >
+        </div>
+    </div>
 </nav>
